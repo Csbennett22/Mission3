@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="icon" href="img/baseball.png">
+</head>
+
+
+<body>
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeForm">Grade Calculator</a>
+    </nav>
+    <h1>@ViewData["Header"]</h1>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>This is my awesome footer!</footer>
+
+
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
